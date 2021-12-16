@@ -13,16 +13,14 @@
 </head>
 
 <body>
-  <!-- Initial Hero Image -->
-
-  <!-- Navigation -->
+<!-- Navigation -->
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">Jay's Porfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jay's Portfolio</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -33,13 +31,13 @@
               <a class="nav-link" aria-current="page" href="./home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./index.html#aboutme">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 More..
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
                 <li><a class="dropdown-item" href="./works1.html">Works-1</a></li>
                 <li><a class="dropdown-item" href="./works2.html">Works-2</a></li>
                 <li>
@@ -53,10 +51,50 @@
       </div>
     </div>
   </nav>
-  <!-- Body -->
-    <h1>Welcome</h1>
-    <p></p>
-
+<!-- Body -->
+  <div class="container-fluid"> 
+      <div class="row1" >
+            <h1>Welcome</h1>
+            <p>Contact info yo</p>
+        </div>
+  </div>
+<!-- Contact -->
+<div class="row">
+  <div class="col">
+    <div class="col-md ">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" class="form-control bg-light w-75" id="firstName" required="">
+    </div>
+    <div class="col-md">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control bg-light w-75" id="lastName" required="">
+    </div>
+    <div class="col-md">
+      <label for="emailInfo" class="form-label">E-mail</label>
+      <input type="email" class="form-control bg-light w-75" id="emailInfo" required="">
+    </div>
+    <div class="col-md">
+      <label for="phoneNumber" class="form-label">Phone Number</label>
+      <input type="text" class="form-control bg-light w-75" id="phoneNumber" placeholder="+1 (555) 867-5309">
+    </div>
+    <div class="col-md">
+      <label for="comments" class="form-label"> </label>
+      <textarea class="form-control bg-light w-75" id="comments" rows="5" placeholder="Enter question about pricing or availability here" required=""></textarea>
+    </div>
+    <div class="col-md mt-3">                    
+      <button type="submit" class="btn btn-outline-light btn-dark">Submit</button>
+    </div>
+  </div>
+  <!-- Side card -->
+  <div class="card" style="width: 36rem;">
+    <img src="./Images/cambping.png" class="card-img-top" alt="Campbell Sketch">
+    <div class="card-body">
+      <h5 class="card-title text-black">Campbell sketch</h5>
+      <p class="card-text text-black">A caricture sketch of a friend done quickly for this site</p>
+      <a href="./works1.html" class="btn btn-dark">See More work Here!</a>
+    </div>
+  </div>     
+</div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -1,5 +1,12 @@
-@import url();
-@import url();
-*{background-image: ;
-    
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+body{
+    background-image: url(/mfw-final/Images/dark-honeycomb.png);
+    color:whitesmoke;
+}
+.dropdown-item{
+    color: #a0a0a0;
+}
+.row1{
+    text-align: center;
 }
