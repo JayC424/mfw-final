@@ -4,10 +4,10 @@ h1{
     z-index: auto;
 }
 h2{
-    font-family: 'Indie Flower'; cursive;
+    font-family: 'Indie Flower', cursive;
 }
 h5{
-    font-family: 'Indie Flower'; cursive;
+    font-family: 'Indie Flower', cursive;
 }
 p{
     z-index:auto;
@@ -33,6 +33,4 @@ body{
 }
 #footer{
     text-align: center;
-}
-
 }
