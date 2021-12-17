@@ -10,19 +10,22 @@
   integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Jay's Porfolio (For now)</title>
+    <script src="https://kit.fontawesome.com/8a2e7c28be.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Initial hero Images *only on index page, rest should navigate*-->
   <div class="row">
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
     <div class="col mt-5 p-3">
-      <h1 class="hero-header text-uppercase fw-bold">Jay Cercone Development</h1>
-      <p class="fs-4">An upstart developer, Full time gear head, and part time illustrator, Jay Cercone is here for all your wrenching, Illustrating, and front end development needs.</p>
-      <a class="btn btn-dark btn-large" href="./about.html" role="button" id="hero-button" target="_blank">Learn More</a>
+      
+      <h1 class="hero-header text-uppercase fw-bold" id="hero0">Jay Cercone Development</h1>
+      <img src="./Images/crow.png" class="img-fluid" id="crows" alt="crow logo">
+      <p class="fs-4" id="hero1">An upstart developer, Full time gear head, and part time illustrator, Jay Cercone is here for all your wrenching, Illustrating, and front end development needs.</p>
+      <a class="btn btn-dark btn-large" href="#aboutme" role="button" id="hero-button" target="_blank">Learn More</a>
     </div>
     <div class="col img-col d-none d-sm-block">
-      <img src="./Images/wifeandi.jpg" class="img-fluid h-75" alt="Picture of me">
+      <img src="./Images/wifeandi.jpg" class="rounded img-fluid h-75" alt="Picture of me">
     </div>
   </div>
 
@@ -41,7 +44,7 @@
         <div class="offcanvas-body bg-dark">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+              <a class="nav-link" aria-current="page" href="#HomeInfo">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutme">About</a>
@@ -65,49 +68,99 @@
     </div>
   </nav>
 <!-- Body -->
-  <h1>Welcome</h1>
-  <p></p>
+  <div class="container-fluid" id="HomeInfo">
+    <h1>Welcome</h1>
+      <p><strong>Here's where you would find updates to the site, like what days I added new works, or made other things available.</strong>
+      <br>
+    This is also where I would update my abbhorrent formatting to be presentable, not just fit the assignment requirements.
+      </p>
+      <hr>
+    <div class="row">
+        <div class="col-3">
+          <h5>12/whatever day/2021</h5>
+          <hr>
+        </div>
+      <div class="col-9">
+        <p>Made link to old site available <a href="https://jayc424.github.io/final-project/">HERE!</a> </p>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h5>12/whatever day/2021</h5>
+        <hr>
+      </div>
+      <div class="col-9">
+        <p>Added some tattoos to the works page </p>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h5>12/whatever day/2021</h5>
+        <hr>
+      </div>
+      <div class="col-9">
+        <p>Added some sketches to works pages. </p>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h5>12/whatever day/2021</h5>
+        <hr>
+      </div>
+      <div class="col-9">
+        <p>Added sketch and contact form to contact page </p>
+        <hr>
+      </div>
+    </div>
+</div>
 <!-- About-->
 <div class="accordion" id="aboutme">
-  <div class="accordion-item">
+  <div class="accordion-item bg-dark">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
+      <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Automotive Experience
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>12 Year ASE Master Technician.</strong> Jay spent over ten years turning a wrench professionally, Working for manufacturers such as Subaru, Mitsubishi, Hyundai, Kia, Chevrolet and GMC. Now, he focuses on custom Motorcycle work and Hot rodding in his spare time.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item bg-dark">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
+      <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Freelance Illustrator and Tattoo Designer
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>Always having an interest in art,</strong> Jay has pursued comic book style illustration and tattoo design recreationally for over 17 years. He has previously designed Album artwork for local Punk bands, Illustrated small projects at Fresno City College, and has helped design over 20 Tattoos (not including his own.)
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item bg-dark">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
+      <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Beginner Front End Developer
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>Starting in 2021,</strong> Jay decided to pursue an education in something other than Automotive work, one that aligned more with his core values of focusing on his growing family. Currently enrolled in Web Development courses, Jay will continue with JavaScript in January at BitWise Industries.
       </div>
     </div>
   </div>
 </div>
 <!-- Footer -->
+<div class="container">
+  <div class="row-cols-auto">
 
+  </div>
+</div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
